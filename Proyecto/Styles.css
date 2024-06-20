@@ -1,0 +1,288 @@
+/* Estilos para secciones específicas */
+#reservar h2,
+#contacto h2,
+#calendario h2 {
+  text-align: center;
+  font-size: 2rem;
+  color: #1e3c72;
+  margin-bottom: 1rem;
+}
+
+/* Estilos Generales */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  background-color: #87aac2;
+  color: #333;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+header {
+  background: linear-gradient(45deg, #28519c, #188538);
+  color: #fff;
+  padding: 1rem 0;
+  text-align: center;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2.5rem;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+  margin: 1rem 0 0;
+}
+
+nav ul li {
+  margin: 0 1rem;
+}
+
+nav ul li a {
+  color: #fff;
+  font-size: 1.2rem;
+  padding: 0.5rem 1rem;
+  transition: background 0.3s;
+}
+
+nav ul li a:hover {
+  background: rgba(12, 7, 7, 0);
+  border-radius: 5px;
+}
+
+/* Secciones del Contenido Principal */
+main {
+  padding: 2rem;
+}
+
+.texto-banner {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.texto-banner h2 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.texto-banner p {
+  font-size: 1.2rem;
+  color: #080202;
+}
+
+.banner img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.descripcion,
+.servicios,
+.instalaciones {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.descripcion h2,
+.servicios h2,
+.instalaciones h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #1e3c72;
+  text-align: center;
+  /* Añadido para centrar los títulos */
+}
+
+.descripcion p {
+  font-size: 1.1rem;
+  color: #0e0c0c;
+}
+
+.instalaciones,
+.servicios {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.instalaciones article,
+.servicios article {
+  flex: 1;
+  max-width: 300px;
+  background: #fff;
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+}
+
+.instalaciones article:hover,
+.servicios article:hover {
+  transform: translateY(-10px);
+}
+
+.instalaciones img,
+.servicios img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+}
+
+.instalaciones h3,
+.servicios h3 {
+  font-size: 1.5rem;
+  color: #1e3c72;
+  margin-bottom: 0.5rem;
+}
+
+.instalaciones p,
+.servicios p {
+  color: #666;
+}
+
+/* Estilo para Formulario */
+.formulario-reservas {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 2rem;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.formulario-reservas label {
+  display: block;
+  margin-top: 1rem;
+  font-weight: bold;
+}
+
+.formulario-reservas input,
+.formulario-reservas select {
+  width: 100%;
+  padding: 0.5rem;
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.btn-reservar {
+  background-color: #1e3c72;
+  color: #fff;
+  padding: 0.7rem 1rem;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background 0.3s;
+}
+
+.btn-reservar:hover {
+  background-color: #2a5298;
+}
+
+/* Ubicación */
+.ubicacion-mapa {
+  text-align: center;
+  margin: 2rem 0;
+}
+
+.ubicacion-mapa iframe {
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.ubicacion-mapa p {
+  margin-top: 1rem;
+  font-size: 1.1rem;
+  color: #030303;
+}
+
+/* Contacto */
+#contacto p {
+  text-align: center;
+  font-size: 1.1rem;
+  color: #111010;
+  margin-bottom: 2rem;
+}
+
+#contacto p strong {
+  color: #1e3c72;
+}
+
+/* Calendario */
+#calendario iframe {
+  width: 100%;
+  height: 600px;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Footer */
+footer {
+  background: #1e3c72;
+  color: #fff;
+  text-align: center;
+  padding: 1rem 0;
+}
+
+footer .social-links {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+  margin: 1rem 0;
+}
+
+footer .social-links li {
+  margin: 0 1rem;
+}
+
+footer .social-links a {
+  color: #fff;
+  font-size: 1.5rem;
+  transition: color 0.3s;
+}
+
+footer .social-links a:hover {
+  color: #ffd700;
+}
+
+footer p {
+  margin: 1rem 0 0;
+}
+
+/* Diseño Responsivo */
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav ul li {
+    margin-bottom: 1rem;
+  }
+
+  .instalaciones,
+  .servicios {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .banner img {
+    height: auto;
+  }
+}

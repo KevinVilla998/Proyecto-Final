@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jafaby Centro Recreativo</title>
+    <link rel="stylesheet" href="/Styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+    <header>
+        <h1>Jafaby Centro Recreativo</h1>
+        <nav>
+            <ul>
+                <li><a href="#descripcion">Descripción</a></li>
+                <li><a href="#servicios">Servicios</a></li>
+                <li><a href="#instalaciones">Instalaciones</a></li>
+                <li><a href="#ubicacion">Ubicación</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+                <li><a href="#calendario">Calendario</a></li>
+                <li><a href="#reservar">Reservar</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="texto-banner">
+            <h2>¡Bienvenido a Jafaby Centro Recreativo!</h2>
+            <p>El mejor lugar para disfrutar de actividades recreativas en un entorno natural.</p>
+        </section>
+        <section class="banner">
+            <img src="Imagenes/Banner.jpg" alt="Banner Image">
+        </section>
+        <section id="descripcion" class="descripcion">
+            <h2>Descripción</h2>
+            <p>Jafaby Centro Recreativo es un destino ideal para pasar tiempo con amigos y familia. Ofrecemos una
+                variedad de actividades y servicios para todos los gustos.</p>
+        </section>
+        <section id="servicios" class="servicios">
+            <h2>Servicios</h2>
+            <article>
+                <img src="Imagenes/Piscina.jpg" alt="Servicio 1">
+                <h3>Piscinas</h3>
+                <p>Disfruta de nuestras piscinas al aire libre, ideales para relajarse y divertirse.</p>
+            </article>
+            <article>
+                <img src="Imagenes/Restaurante.jpg" alt="Servicio 2">
+                <h3>Restaurantes</h3>
+                <p>Deléitate con una variedad de opciones gastronómicas en nuestro restaurante.</p>
+            </article>
+            <article>
+                <img src="Imagenes/Canchas.jpg" alt="Servicio 3">
+                <h3>Canchas Deportivas</h3>
+                <p>Diviértete jugando fútbol, baloncesto y más en nuestras diversas canchas deportivas.</p>
+            </article>
+        </section>
+        <section id="instalaciones" class="instalaciones">
+            <h2>Instalaciones</h2>
+            <article>
+                <img src="Imagenes/Area verde.jpg" alt="Instalación 1">
+                <h3>Áreas Verdes</h3>
+                <p>Relájate y disfruta de nuestras extensas áreas verdes para actividades al aire libre.</p>
+            </article>
+            <article>
+                <img src="Imagenes/Salon.jpg" alt="Instalación 2">
+                <h3>Salones de Eventos</h3>
+                <p>Organiza eventos especiales en nuestros espacios diseñados para celebraciones.</p>
+            </article>
+        </section>
+        <section id="ubicacion" class="ubicacion-mapa">
+            <h2>Ubicación</h2>
+            <iframe src="https://www.google.com/maps/embed?pb=YOUR_EMBED_LINK_HERE" width="600" height="450"
+                allowfullscreen="" loading="lazy"></iframe>
+            <p>Centro Recreativo JAFABY, F82X+4RR, Comayagua</p>
+        </section>
+        <section id="contacto">
+            <h2>Contacto</h2>
+            <p>Teléfono: <strong>123-456-7890</strong></p>
+            <p>Email: <strong>info@jafaby.com</strong></p>
+        </section>
+        <section id="calendario" class="calendario">
+            <h2>Calendario de Eventos</h2>
+            <div id="calendar-container">
+                <iframe id="calendar-iframe"
+                    src="https://calendar.google.com/calendar/embed?src=b8dcf93ab64bf4a2a9a94f449b5e309a07e5c91267202378a7a789a32a3469be%40group.calendar.google.com&ctz=America%2FTegucigalpa"
+                    style="border:0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+            </div>
+            <h2>Reservar</h2>
+            <form class="formulario-reservas" action="/reservar" method="post">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="fecha">Fecha de Reserva:</label>
+                <input type="date" id="fecha" name="fecha" required>
+
+                <label for="hora">Hora de Reserva:</label>
+                <input type="time" id="hora" name="hora" required>
+
+                <label for="motivo">Motivo del Evento:</label>
+                <input type="text" id="motivo" name="motivo" required>
+
+                <label for="servicio">Servicio:</label>
+                <select id="servicio" name="servicio" required>
+                    <option value="piscinas">Piscinas</option>
+                    <option value="restaurantes">Restaurantes</option>
+                    <option value="canchas">Canchas Deportivas</option>
+                </select>
+
+                <button type="submit" class="btn-reservar">Reservar Ahora</button>
+            </form>
+        </section>
+        </section>
+    </main>
+    <footer>
+        <div class="social-container">
+            <p>Aquí puedes acceder a nuestras redes:</p>
+            <div class="social-links">
+                <a href="https://www.facebook.com/centrorecreativojafaby/?locale=es_LA" target="_blank">
+                    Facebook <i class="fab fa-facebook"></i>
+                </a>
+                <a href="https://www.instagram.com/centrorecreativojafabyhn/" target="_blank">
+                    Instagram <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://maps.app.goo.gl/1WSkEeNZ1jwhTBdCA" target="_blank">
+                    Ubicación <i class="fas fa-map-marker-alt"></i>
+                </a>
+            </div>
+        </div>
+        <p>&copy; 2023 Jafaby Centro Recreativo. Todos los derechos reservados.</p>
+    </footer>
+</body>
+
+</html>
